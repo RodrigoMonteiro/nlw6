@@ -1,5 +1,6 @@
 import Home from './pages/Home'
 import Room from './pages/Room'
+import AdminRoom from './pages/AdminRoom'
 import NewRoom from './pages/NewRoom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" exact component={Home}></Route>
           <Route path="/rooms/new" exact component={NewRoom}></Route>
           <Route path="/rooms/:id" exact component={Room}></Route>
+          <Route path="/admin/rooms/:id" exact component={AdminRoom}></Route>
 
         </Switch>
 
